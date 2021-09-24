@@ -6,9 +6,7 @@ const { uuid } = require("uuidv4");
 
 exports.getTodoList = async (req, res) => {
   try {
-    let todoListData = fs.readFile(
-      path.resolve(__dirname, "todolist.json")
-    );
+    let todoListData = await fs.readFileSync(path.resolve(__dirname, "todolist.json"));
     let todoList = JSON.parse(todoListData);
     res.send(todoList);
   } catch (error) {
