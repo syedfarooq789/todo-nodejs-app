@@ -15,5 +15,5 @@ Nodejs
 # How to run the app locally:
 
 Run 'npm install' to install all needed dependencies
-Then start the server using 'node server.js or nodemon server.js'
+Then start the server using 'npm start or npm run dev'
 Navigate to your browser 'http://localhost:5000' to view the app
